@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Compendium of scientists</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
+
+    <h2>This is the content from the child template</h2>
+
     {% for scientist in scientists %}
         {{ scientist.name }}<br>
         {{ scientist.country_born }}<br>
@@ -15,5 +11,5 @@
         {{ scientist.description }}<br>
         {{ scientist.nobel_laureate }}<br>
     {% endfor %}
-</body>
-</html>
+
+{% endblock %}
