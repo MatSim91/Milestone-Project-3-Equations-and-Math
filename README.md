@@ -1,10 +1,10 @@
-<h1 align="center">Milestone Project 3 - Equations & Math</h1>
+<h1 align="center">Milestone Project 3 - The Compendium of Scientists</h1>
 
-![Icon's Mockup](project/Responsive-design.JPG)
+![Compendium Mockup](static/images/Responsive-design.JPG)
 
 [Click here to view the live project :link:]()
 
-Equations & Math Description
+The Compendium of Scientists Description
 
 # Table Of Contents
 
@@ -115,8 +115,8 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 # Frameworks Libraries and Programs Used
 
-1. [Bootstrap:](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
-    - Bootstrap was used to assist with the responsiveness and styling of the website.
+1. [Materialize:](https://materializecss.com/)
+    - Materialize was used to assist with the responsiveness and styling of the website.
 
 2. [JavaScript Validator](https://jshint.com)
     - Used to check and validate all JavaScript code to check for any typos or errors.
@@ -136,8 +136,8 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 7. [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
     - Used for testing and fixing website bugs. Also used Google Lighthouse for performance testing.
 
-8. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used on the game.html page to add the trophies icon, the square icon and the restart icon.
+8. [Google Icons:](https://google.github.io/material-design-icons/#icon-font-for-the-web)
+    - Google Icons was used on the 
 
 # Testing
 
@@ -308,9 +308,9 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 -
 
-- [Bootstrap](https://getbootstrap.com) for the large and free libraries.
+- [Materialize:](https://materializecss.com/) for the amount of free features that we can add.
 
-- [Font Awesome](https://fontawesome.com/icons) for the huge collection of free icons they offer.
+- [Google Icons:](https://google.github.io/material-design-icons/#icon-font-for-the-web) for the collection of free icons.
 
 - [Web Formatter](https://webformatter.com/) Used for formatting HTML, CSS and Javascript and also to check for errors.
 
