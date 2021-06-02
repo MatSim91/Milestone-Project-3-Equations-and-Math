@@ -21,6 +21,8 @@ Equations & Math Description
     - [Additional Testing](#additional-testing)
     - [Bugs and Fixes](#bugs-and-fixes)
 7. [Deployment](#deployment)
+    - [GitHub](#github-pages)
+    - [Heroku](#heroku)
 8. [Credits](#credits)
     - [Code](#code)
     - [Content](#content)
@@ -228,7 +230,10 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 # Deployment
 
-- **GitHub Pages:** Under the repository page: 
+## GitHub Pages 
+
+**Under the repository page:**
+
     1. Click on Settings 
     2. Scroll down to the "GitHub Pages" section 
     3. Select the Source Branch 
@@ -247,6 +252,39 @@ A brief overview of the languages, frameworks, and other tools I've used on this
         - I have also used extra git commands such as: 
         - `python3 -m http.server` - To run a preview of the website on the browser.
         - `git status` - To display the current state of the working directory and the staging area.
+
+## Heroku
+
+- To deploy the app using Heroku, go through the following steps:
+
+    1. Use pip3 freeze > `requirements.txt` to create a list of the dependencies.
+
+    2. Create a `Procfile` by running this command on the CLI: `echo web: python app.py > Procfile`
+
+    3. Run `git add .`, `git commit -m`, and `git push`, to push the project files to your GitHub repository.
+
+    4. Navigate to Heroku, log in and create a new app by clicking on the 'New' and 'Create New App'. Enter your app name and select your region and create app.
+
+    5. Under the 'Deploy' tab, select 'GitHub - Connect to GitHub'.
+    
+    6. Enter your repository's name in the input field, and connect once found.
+
+    7. To set your environment variables navigate to the 'Settings' tab and scroll down to 'reveal config vars'
+
+    8. Add the config vars:
+
+    | Key | Value |
+    |:---:|:-----:|
+    | IP | 0.0.0.0 |
+    | PORT | 5000 |
+    | MONGO_DBNAME | `<database_name>` |
+    | MONGO_URI | `mongodb+srv://<username>:<password>@cluster0.ar4ah.mongodb.net/<database_name>?retryWrites=true&w=majority` |
+    | SECRET_KEY | `<Your secret Key>` |
+
+    9. Navigate to the 'Deploy' tab. To enable automatic deployment, scroll down to the 'Automatic Deploys' section.
+
+    10. Choose your GitHub branch and enable automatic deployment.
+
 
 ## Running locally
 
