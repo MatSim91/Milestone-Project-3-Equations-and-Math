@@ -8,8 +8,9 @@ app = Flask(__name__)
 
 
 @app.route("/")
+def test():
+    return "Testing route"
 
-# Change debug to False before deployment
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
