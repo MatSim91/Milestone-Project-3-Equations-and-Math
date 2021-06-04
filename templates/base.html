@@ -14,7 +14,8 @@
 <body>
     
     <header>
-        <!---- Navigation bar with collapsible menu imported from Materialize --->
+        
+        <!---- Navigation bar with collapsible menu imported from Materialize and customized --->
         <nav>
             <div class="nav-wrapper black">
                 <a href="{{ url_for('home') }}" class="brand-logo">The Compendium of Scientists</a>
@@ -24,7 +25,7 @@
                     <li><a href="{{ url_for('scientists') }}">Compendium</a></li>
                     <li><a href="#">Scientists</a></li>
                     <li><a href="#">Add Scientist</a></li>
-                    <li><a href="#">Register</a></li>
+                    <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Logout</a></li>
                 </ul>
@@ -36,7 +37,7 @@
             <li><a href="{{ url_for('scientists') }}">Compendium</a></li>
             <li><a href="#">Scientists</a></li>
             <li><a href="#">Add Scientist</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
             <li><a href="#">Login</a></li>
             <li><a href="#">Logout</a></li>
         </ul>

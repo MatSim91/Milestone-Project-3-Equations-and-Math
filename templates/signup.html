@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!---- Card imported from materialized and customized for signup form functionality --->
+
+<h3 class="center-align">Registration Form</h3>
+
+<div class="row">
+    <form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('signup') }}">
+        <div class="card-panel white">
+            <div class="row black-text">
+                <div class="input-field col s10 offset-m1">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="username" name="username" type="text" class="validate">
+                    <label for="username">User</label>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s10 offset-m1">
+                  <i class="material-icons prefix">vpn_key</i>
+                  <input id="password" name="password" type="password" class="validate">
+                  <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <button type="submit" class="col s6 offset-m3 btn-large black">Register</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
