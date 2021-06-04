@@ -31,7 +31,7 @@ def scientists():
     return render_template("scientists.html", scientists=scientists)
 
 
-# Registration functionaly created with the help of the Code Institute Mini Project
+# Signup functionality created with the help of the Code Institute Mini Project
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
     if request.method == "POST":
