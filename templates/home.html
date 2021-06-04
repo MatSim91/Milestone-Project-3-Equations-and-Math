@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h1 class="center"> Homepage</h1>
+
+    {% for scientist in scientists %}
+        {{ scientist.name }}<br>
+        {{ scientist.country_born }}<br>
+        {{ scientist.dob }}<br>
+        {{ scientist.field_of_research }}<br>
+        {{ scientist.description }}<br>
+        {{ scientist.nobel_laureate }}<br>
+    {% endfor %}
+
+{% endblock %}

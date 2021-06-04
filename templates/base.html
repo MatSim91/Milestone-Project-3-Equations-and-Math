@@ -13,6 +13,35 @@
 </head>
 <body>
     
+    <header>
+        <!---- Navigation bar with collapsible menu imported from Materialize --->
+        <nav>
+            <div class="nav-wrapper black">
+                <a href="{{ url_for('home') }}" class="brand-logo">The Compendium of Scientists</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down topnav">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('scientists') }}">Compendium</a></li>
+                    <li><a href="#">Scientists</a></li>
+                    <li><a href="#">Add Scientist</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav black" id="mobile-demo">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('scientists') }}">Compendium</a></li>
+            <li><a href="#">Scientists</a></li>
+            <li><a href="#">Add Scientist</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </header>
+
     {% block content %}
     {% endblock %}
 
