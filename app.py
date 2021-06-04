@@ -28,7 +28,7 @@ def home():
 @app.route("/scientists")
 def scientists():
     scientists = mongo.db.scientists.find()
-    return render_template("scientists.html", scientists=scientists)
+    return render_template("compendium.html", scientists=scientists)
 
 
 # Signup and Log In functionality created with the help of the Code Institute

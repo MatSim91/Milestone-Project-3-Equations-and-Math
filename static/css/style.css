@@ -45,6 +45,16 @@ body {
     margin: 100px;
 }
 
+/*--- Scientists page ---*/
+
+.card {
+    margin: 5px;
+}
+
+.tags {
+    font-weight: 600;
+}
+
 /*--- Tool tip inspired on w3schools ---*/
 
 .tooltip {
