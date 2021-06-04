@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
     <title>The Compendium of Scientists</title>
 </head>
+
 <body>
-    
+
     <header>
 
         <!---- Navigation bar with collapsible menu imported from Materialize and customized --->
@@ -22,28 +25,32 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down topnav">
                     <li><a href="{{ url_for('home') }}">Home</a></li>
+                    {% if session.user %}
                     <li><a href="{{ url_for('scientists') }}">Compendium</a></li>
                     <li><a href="#">Scientists</a></li>
                     <li><a href="#">Add Scientist</a></li>
+                    <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                    {% else %}
                     <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
                     <li><a href="{{ url_for('login') }}">Login</a></li>
-                    <li><a href="#">Logout</a></li>
+                    {% endif %}
                 </ul>
             </div>
         </nav>
 
         <ul class="sidenav black" id="mobile-demo">
             <li><a href="{{ url_for('home') }}">Home</a></li>
+            {% if session.user %}
             <li><a href="{{ url_for('scientists') }}">Compendium</a></li>
             <li><a href="#">Scientists</a></li>
             <li><a href="#">Add Scientist</a></li>
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            {% else %}
             <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
             <li><a href="{{ url_for('login') }}">Login</a></li>
-            <li><a href="#">Logout</a></li>
+            {% endif %}
         </ul>
     </header>
-
-
 
     <main class="container">
         {% block content %}
@@ -52,20 +59,22 @@
 
     <section>
         {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                {% for message in messages %}
-                    <div class="row flashes">
-                        <h4 class="center-align">{{ message }}</h4>
-                    </div>
-                {% endfor %}
-            {% endif %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="row flashes">
+            <h4 class="center-align">{{ message }}</h4>
+        </div>
+        {% endfor %}
+        {% endif %}
         {% endwith %}
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     {% block scripts %}
     {% endblock %}
 </body>
+
 </html>
