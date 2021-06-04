@@ -50,6 +50,8 @@ def signup():
 
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
+        return redirect(url_for("home"))
+
     return render_template("signup.html")
 
 
@@ -64,6 +66,7 @@ def login():
                 existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
                     flash("Welcome, {}".format(request.form.get("username")))
+                    return redirect(url_for("home"))
             else:
                 flash("Incorrect User and/or Password")
                 return redirect(url_for("login"))
