@@ -298,7 +298,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 # Credits
 
--
+- [w3schools](https://www.w3schools.com/css/css_tooltip.asp) - From W3Schools got the idea of adding a Tooltip to help users on the sign up page regarding the user and password requirements. 
 
 -
 
