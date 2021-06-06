@@ -9,7 +9,7 @@
     <form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('login') }}">
         <div class="card-panel white">
             <div class="row black-text">
-                <div class="input-field col s10 offset-m1">
+                <div class="input-field col s10 offset-m1 offset-s1">
                     <i class="material-icons prefix">account_circle</i>
                     <input id="username" name="username" type="text" class="validate" minlength="3" maxlength="18"
                         pattern="^[a-zA-Z0-9]{3,18}$" required>
@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="input-field col s10 offset-m1">
+                <div class="input-field col s10 offset-m1 offset-s1">
                     <i class="material-icons prefix">vpn_key</i>
                     <input id="password" name="password" type="password" minlength="6" maxlength="18" class="validate"
                         pattern="^[a-zA-Z0-9]{6,18}$" required>
@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="row">
-                <button type="submit" class="col s6 offset-m3 btn-large black">Log In</button>
+                <button type="submit" class="col s6 offset-m3 offset-s3 btn-large black">Log In</button>
             </div>
         </div>
     </form>

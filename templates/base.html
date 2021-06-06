@@ -62,7 +62,9 @@
         {% if messages %}
         {% for message in messages %}
         <div class="row flashes">
-            <h4 class="center-align">{{ message }}</h4>
+            <div class="col s10 offset-s1 m6 offset-m3 card-panel white">
+                <h4 class="center-align ">{{ message }}</h4>
+            </div>
         </div>
         {% endfor %}
         {% endif %}
