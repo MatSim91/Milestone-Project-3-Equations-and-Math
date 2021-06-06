@@ -2,7 +2,7 @@
 
 ![Compendium Mockup](static/images/Responsive-design.JPG)
 
-[Click here to view the live project :link:]()
+[Click here to view the live project :link:](https://compendium-of-scientists.herokuapp.com/)
 
 The Compendium of Scientists Description
 
