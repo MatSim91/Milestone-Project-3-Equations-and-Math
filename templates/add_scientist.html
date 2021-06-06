@@ -3,8 +3,10 @@
 
 <h3 class="center">Add Scientist</h3>
 
+<!---- Add Scientist Form with 7 input fields --->
 <div class="row card-panel white">
-    <form class="col s12" method="POST" action="">
+    <form class="col s12" method="POST" action="{{ url_for('add_scientist') }}">
+        <!---- Row with Scientist name and Country --->
         <div class="row">
             <div class="input-field col s6">
                 <i class="material-icons prefix">account_circle</i>
@@ -17,6 +19,7 @@
                 <label for="country_born">Country of Birth</label>
             </div>
         </div>
+        <!---- Row for Date picker and Field of Research --->
         <div class="row">
             <div class="input-field col s4">
                 <i class="material-icons prefix">date_range</i>
@@ -29,6 +32,7 @@
                 <label for="field_of_research">Field of Research</label>
             </div>
         </div>
+        <!---- Row for Short Scientist Description --->
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">rate_review</i>
@@ -36,13 +40,14 @@
                 <label for="description">Short Description</label>
             </div>
         </div>
+        <!---- Row for Nobel laureate Y/Y and Wikipedia link --->
         <div class="row">
             <div class="input-field col s3">
                 <i class="material-icons prefix">stars</i>
                 <select id="nobel_laureate" name="nobel_laureate" class="validate" required>
                     <option value="" disabled selected>Y/N</option>
-                    <option value="true">Yes</option>
-                    <option value="false">No</option>
+                    <option value="True">Yes</option>
+                    <option value="False">No</option>
                   </select>
                   <label>Nobel Laureate</label>
             </div>
@@ -50,6 +55,14 @@
                 <i class="material-icons prefix">insert_link</i>
                 <input id="url" name="url" type="tel" class="validate" required>
                 <label for="url">Wikipedia URL</label>
+            </div>
+        </div>
+        <!---- Submit button --->
+        <div class="row">
+            <div class="col s12 center-align">
+                <button type="submit" class="col s6 offset-m3 offset-s3 btn-large black">
+                    Add Scientist
+                </button>
             </div>
         </div>
     </form>

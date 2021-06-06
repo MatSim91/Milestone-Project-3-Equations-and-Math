@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 
+<h3 class="center">All Scientists</h3>
+
 <ul>
     <div class="row">
         {% for scientist in scientists %}
@@ -15,7 +17,8 @@
                     <p><b class="tags">Date of Birth:</b> {{ scientist.dob }}</p>
                     <p><b class="tags">Field of Research:</b> {{ scientist.field_of_research }}</p>
                     <p><b class="tags">Is Nobel Laureate:</b> {{ scientist.nobel_laureate }}</p><br>
-                    <p>{{ scientist.description }}</p>
+                    <p>{{ scientist.description }}</p><br>
+                    <p><em>Added by: {{ scientist.added_by }}</em></p>
                 </div>
                 <div class="card-action center-align">
                     <a href="{{ scientist.url }}" target=”_blank”>Wikipedia</a>

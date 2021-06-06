@@ -78,8 +78,22 @@ def login():
     return render_template("login.html")
 
 
-@app.route("/add_scientist")
+@app.route("/add_scientist", methods=["GET", "POST"])
 def add_scientist():
+    if request.method == "POST":
+        scientist = {
+            "name": request.form.get("name"),
+            "country_born": request.form.get("country_born"),
+            "dob": request.form.get("dob"),
+            "field_of_research": request.form.get("field_of_research"),
+            "description": request.form.get("description"),
+            "nobel_laureate": request.form.get("nobel_laureate"),
+            "url": request.form.get("url"),
+            "added_by": session["user"]
+        }
+        mongo.db.scientists.insert_one(scientist)
+        flash("Scientist was Succesfully Added")
+        return redirect(url_for("scientists"))
     return render_template("add_scientist.html")
 
 
