@@ -78,6 +78,11 @@ def login():
     return render_template("login.html")
 
 
+@app.route("/add_scientist")
+def add_scientist():
+    return render_template("add_scientist.html")
+
+
 @app.route("/logout")
 def logout():
     flash("You have succesfully logged out")
