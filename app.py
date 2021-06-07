@@ -103,6 +103,13 @@ def add_scientist():
     return render_template("add_scientist.html")
 
 
+@app.route("/delete_scientist/<scientist_id>")
+def delete_scientist(scientist_id):
+    mongo.db.scientists.remove({"_id": ObjectId(scientist_id)})
+    flash("Scientist deleted")
+    return redirect(url_for("edit_scientists"))
+
+
 @app.route("/logout")
 def logout():
     flash("You have succesfully logged out")
