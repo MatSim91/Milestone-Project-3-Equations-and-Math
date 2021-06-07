@@ -28,8 +28,8 @@
                     {% if session.user %}
                     <li><a href="{{ url_for('scientists') }}">Compendium</a></li>
                     <li><a href="#">Scientists</a></li>
-                    <li><a href="{{ url_for('add_scientist') }}">Add Scientist</a></li>
-                    <li><a href="{{ url_for('edit_scientists') }}">Edit Scientists</a></li>
+                    <li><a href="{{ url_for('add_scientist') }}">Add</a></li>
+                    <li><a href="{{ url_for('edit_scientists') }}">Edit</a></li>
                     <li><a href="{{ url_for('logout') }}">Logout</a></li>
                     {% else %}
                     <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
@@ -44,8 +44,8 @@
             {% if session.user %}
             <li><a href="{{ url_for('scientists') }}">Compendium</a></li>
             <li><a href="#">Scientists</a></li>
-            <li><a href="{{ url_for('add_scientist') }}">Add Scientist</a></li>
-            <li><a href="{{ url_for('edit_scientists') }}">Edit Scientists</a></li>
+            <li><a href="{{ url_for('add_scientist') }}">Add</a></li>
+            <li><a href="{{ url_for('edit_scientists') }}">Edit</a></li>
             <li><a href="{{ url_for('logout') }}">Logout</a></li>
             {% else %}
             <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
@@ -79,6 +79,36 @@
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     {% block scripts %}
     {% endblock %}
+
+    <!---- Footer imported from Materialize and customized --->
+    <footer class="page-footer black">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">The Compendium</h5>
+              <hr>
+              <p class="grey-text text-lighten-4">“The most exciting phrase to hear in science, the one that heralds the most discoveries, is not "Eureka!" (I found it!) but 'That's funny...”
+                ― Isaac Asimov</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <hr>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="https://www.nobelprize.org/prizes/" target="_blank">Nobel Prizes and Laureates</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://en.wikipedia.org/wiki/Scientist">Wikipedia Scientist Page</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://www.scientificamerican.com/">Scientific American</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://www.sciencemag.org/">Science Mag</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2021 Copyright
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
 </body>
 
 </html>
