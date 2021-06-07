@@ -1,15 +1,47 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h1 class="center"> Homepage</h1>
+<h1 class="center"> Homepage</h1>
 
-    {% for scientist in scientists %}
-        {{ scientist.name }}<br>
-        {{ scientist.country_born }}<br>
-        {{ scientist.dob }}<br>
-        {{ scientist.field_of_research }}<br>
-        {{ scientist.description }}<br>
-        {{ scientist.nobel_laureate }}<br>
-    {% endfor %}
+<h3 class="center">Some Famous Scientists:</h3>
+
+<div class="row">
+    <div class="flip-card col s12 m4">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="#" alt="Picture of Albert Einstein" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h4>Albert Einstein</h4>
+                <p>Born in: </p>
+                <p>More details: (add cientist details page)</p>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card col s12 m4">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="#" alt="Picture of Marie Curie" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h4>Marie Curie</h4>
+                <p>Born in: </p>
+                <p>More details: (add cientist details page)</p>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card col s12 m4">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="#" alt="Picture of Nikola Tesla" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h4>Nikola Tesla</h4>
+                <p>Born in: </p>
+                <p>More details: (add cientist details page)</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
