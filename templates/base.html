@@ -29,6 +29,7 @@
                     <li><a href="{{ url_for('scientists') }}">Compendium</a></li>
                     <li><a href="#">Scientists</a></li>
                     <li><a href="{{ url_for('add_scientist') }}">Add Scientist</a></li>
+                    <li><a href="{{ url_for('edit_scientists') }}">Edit Scientists</a></li>
                     <li><a href="{{ url_for('logout') }}">Logout</a></li>
                     {% else %}
                     <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
@@ -44,6 +45,7 @@
             <li><a href="{{ url_for('scientists') }}">Compendium</a></li>
             <li><a href="#">Scientists</a></li>
             <li><a href="{{ url_for('add_scientist') }}">Add Scientist</a></li>
+            <li><a href="{{ url_for('edit_scientists') }}">Edit Scientists</a></li>
             <li><a href="{{ url_for('logout') }}">Logout</a></li>
             {% else %}
             <li><a href="{{ url_for('signup') }}">Sign Up</a></li>

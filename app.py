@@ -31,6 +31,12 @@ def scientists():
     return render_template("compendium.html", scientists=scientists)
 
 
+@app.route("/edit_scientists")
+def edit_scientists():
+    scientists = mongo.db.scientists.find()
+    return render_template("edit_scientists.html", scientists=scientists)
+
+
 # Signup and Log In functionality created with the help of the Code Institute
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
