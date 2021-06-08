@@ -54,17 +54,12 @@
         </ul>
     </header>
 
-    <main class="container">
-        {% block content %}
-        {% endblock %}
-    </main>
-
     <section>
         {% with messages = get_flashed_messages() %}
         {% if messages %}
         {% for message in messages %}
-        <div class="row flashes">
-            <div class="col s10 offset-s1 m6 offset-m3 card-panel white">
+        <div class="row flashes flash-message-row">
+            <div class="col s10 offset-s1 m6 offset-m3 card-panel white flash-message">
                 <h4 class="center-align ">{{ message }}</h4>
             </div>
         </div>
@@ -72,6 +67,11 @@
         {% endif %}
         {% endwith %}
     </section>
+
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

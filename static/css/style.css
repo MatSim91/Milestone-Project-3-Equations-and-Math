@@ -35,6 +35,15 @@ h3 {
   background: #555555;
 }
 
+.flash-message-row {
+  margin-bottom: -75px;
+}
+
+.flash-message {
+  margin-top: 50px;
+  border: solid 1px #FF0000;
+}
+
 /*--- Top Nav bar and Side Nav bar ---*/
 
 .topnav li>a:hover {
