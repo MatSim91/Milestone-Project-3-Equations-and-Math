@@ -31,6 +31,13 @@ def scientists():
     return render_template("compendium.html", scientists=scientists)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    scientists = (mongo.db.scientists.find({"$text": {"$search": query}}))
+    return render_template("compendium.html", scientists=scientists)
+
+
 @app.route("/edit_page")
 def edit_page():
     scientists = mongo.db.scientists.find()
