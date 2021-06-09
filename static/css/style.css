@@ -191,7 +191,10 @@ h3 {
     color: #000000;
   }
 
+/*--- Media Queries for Smaller Screens 
 
-
-/*--- TESTS ---*/
-
+@media (max-width: 775px) {
+	nav .brand-logo {
+		font-size: 25px;
+	}
+} ---*/
