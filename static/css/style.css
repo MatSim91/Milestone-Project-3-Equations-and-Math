@@ -137,6 +137,10 @@ h3 {
     font-weight: 600;
 }
 
+.margin {
+  margin-top: 25px;
+}
+
 /*--- Tool tip inspired on w3schools ---*/
 
 .tooltip {
