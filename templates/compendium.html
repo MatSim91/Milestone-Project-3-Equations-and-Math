@@ -35,11 +35,10 @@
                     <p><b class="tags">Date of Birth:</b> {{ scientist.dob }}</p>
                     <p><b class="tags">Field of Research:</b> {{ scientist.field_of_research }}</p>
                     <p><b class="tags">Is Nobel Laureate:</b> {{ scientist.nobel_laureate }}</p><br>
-                    <p>{{ scientist.description }}</p><br>
                     <p><em>Added by: {{ scientist.added_by }}</em></p>
                 </div>
                 <div class="card-action center-align">
-                    <a href="{{ scientist.url }}" target=”_blank”>Wikipedia</a>
+                    <a href="{{ url_for('scientist', scientist_id=scientist._id) }}" class="waves-effect btn-small light-green darken-1" target=”_blank”>More Details</a>
                 </div>
                 
             </div>

@@ -31,6 +31,12 @@ def scientists():
     return render_template("compendium.html", scientists=scientists)
 
 
+@app.route("/scientists/<scientist_id>")
+def scientist(scientist_id):
+    scientist = mongo.db.scientists.find_one({"_id": ObjectId(scientist_id)})
+    return render_template("scientists.html", scientist=scientist)
+
+
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")

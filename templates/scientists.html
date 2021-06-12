@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="center">{{ scientist.name }} Details:</h3>
+
+<div class="row">
+    <div class="col s12">
+
+        <div class="card blue-grey darken-1">
+
+            <div class="card-content white-text">
+                <span class="card-title center-align"><b>{{ scientist.name }}</b></span>
+                <hr>
+                <p><b class="tags">Born in:</b> {{ scientist.country_born }}</p>
+                <p><b class="tags">Date of Birth:</b> {{ scientist.dob }}</p>
+                <p><b class="tags">Field of Research:</b> {{ scientist.field_of_research }}</p>
+                <p><b class="tags">Is Nobel Laureate:</b> {{ scientist.nobel_laureate }}</p><br>
+                <p>{{ scientist.description }}</p><br>
+                <p><em>Added by: {{ scientist.added_by }}</em></p>
+            </div>
+            <div class="card-action">
+                <a href="{{ url_for('edit_scientist', scientist_id=scientist._id) }}" class="waves-effect btn-small black">Edit</a>
+                <a href="{{ url_for('delete_scientist', scientist_id=scientist._id) }}" class="waves-effect btn-small red right">Delete</a>
+                <a href="{{ scientist.url }}" class="waves-effect btn-small black" target=”_blank”>Wikipedia</a>
+            </div>
+
+{% endblock %}
