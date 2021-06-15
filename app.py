@@ -44,19 +44,6 @@ def search():
     return render_template("compendium.html", scientists=scientists)
 
 
-@app.route("/search_edit", methods=["GET", "POST"])
-def search_edit():
-    query = request.form.get("query")
-    scientists = (mongo.db.scientists.find({"$text": {"$search": query}}))
-    return render_template("edit_page.html", scientists=scientists)
-
-
-@app.route("/edit_page")
-def edit_page():
-    scientists = mongo.db.scientists.find()
-    return render_template("edit_page.html", scientists=scientists)
-
-
 # Signup and Log In functionality created with the help of the Code Institute
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
