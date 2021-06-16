@@ -3,6 +3,7 @@
 
 <h3 class="center">The Compendium</h3>
 
+ <!---- Search Bar --->
 <div class="row card-panel white search-bar">
     <form action="{{ url_for('search') }}" method="post" class="col s12">
         <div class="row valig-wrapper center-align row-margin">
@@ -21,6 +22,7 @@
     </form>
 </div>
 
+<!---- For loop showing all the scientists in the database --->
 <ul>
     <div class="row">
         {% for scientist in scientists %}
@@ -36,6 +38,7 @@
                     <p><b class="tags">Field of Research:</b> {{ scientist.field_of_research }}</p>
                     <p><b class="tags">Is Nobel Laureate:</b> {{ scientist.nobel_laureate }}</p><br>
                 </div>
+                <!---- If session user cookie is set it shows the option "More Details" --->
                 {% if session.user %}
                 <div class="card-action center-align">
                     <a href="{{ url_for('scientist', scientist_id=scientist._id) }}" class="waves-effect btn-small light-green darken-1" target=”_blank”>More Details</a>
