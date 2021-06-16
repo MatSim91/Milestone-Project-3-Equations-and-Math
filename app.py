@@ -22,6 +22,10 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/home")
 def home():
+    """
+    Renders homepage and assign a list of
+    recent scientists added to database
+    """
     home = mongo.db.scientists.find()
     recent = list(mongo.db.scientists.find().sort("date", -1))
     return render_template("home.html", home=home, recent=recent)
@@ -29,18 +33,29 @@ def home():
 
 @app.route("/scientists")
 def scientists():
+    """
+    Renders the compendium.html page where it shows
+    all the scientists added in the database
+    """
     scientists = mongo.db.scientists.find()
     return render_template("compendium.html", scientists=scientists)
 
 
 @app.route("/scientists/<scientist_id>")
 def scientist(scientist_id):
+    """
+    Renders the scientists detailed page showing the
+    scientist description and the options to edit/delete the scientist.
+    """
     scientist = mongo.db.scientists.find_one({"_id": ObjectId(scientist_id)})
     return render_template("scientists.html", scientist=scientist)
 
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    """
+    Add the search functionality to the compendium.html page
+    """
     query = request.form.get("query")
     scientists = (mongo.db.scientists.find({"$text": {"$search": query}}))
     return render_template("compendium.html", scientists=scientists)
@@ -49,6 +64,10 @@ def search():
 # Signup and Log In functionality created with the help of the Code Institute
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
+    """
+    Adding the registration functionality and adding username to database
+    Checks if the username is already registered
+    """
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
@@ -72,6 +91,10 @@ def signup():
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    """
+    Adding the log-in functionality, check if the password
+    and username matches with database
+    """
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
@@ -95,6 +118,9 @@ def login():
 
 @app.route("/scientist/add", methods=["GET", "POST"])
 def add_scientist():
+    """
+    Function to add scientists and push their details into database
+    """
     if request.method == "POST":
         scientist = {
             "name": request.form.get("name"),
@@ -115,6 +141,9 @@ def add_scientist():
 
 @app.route("/edit_scientist/<scientist_id>", methods=["GET", "POST"])
 def edit_scientist(scientist_id):
+    """
+    Function to edit scientists and update their details in the database
+    """
     if request.method == "POST":
         send = {
             "name": request.form.get("name"),
@@ -135,6 +164,10 @@ def edit_scientist(scientist_id):
 
 @app.route("/delete_scientist/<scientist_id>")
 def delete_scientist(scientist_id):
+    """
+    Delete scientists that are on the database and displaying
+    a message confirming the scientist was deleted
+    """
     mongo.db.scientists.remove({"_id": ObjectId(scientist_id)})
     flash("Scientist deleted")
     return redirect(url_for("scientists"))
@@ -142,6 +175,9 @@ def delete_scientist(scientist_id):
 
 @app.route("/logout")
 def logout():
+    """
+    Function to logoff and remove the user session
+    """
     flash("You have succesfully logged out")
     session.pop("user")
     return redirect(url_for("login"))
