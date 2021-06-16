@@ -53,4 +53,34 @@
   </div>
 </div>
 
+<h3 class="center">Recent Additions</h3>
+
+<div class="row">
+  {% for scientist in recent %}
+  {% if loop.index < 7 %}
+  <div class="col s12 m4">
+      
+      <div class="card blue-grey darken-1">
+          
+          <div class="card-content white-text">
+              <span class="card-title center-align"><b>{{ scientist.name }}</b></span>
+              <hr>
+              <p><b class="tags">Born in:</b> {{ scientist.country_born }}</p>
+              <p><b class="tags">Date of Birth:</b> {{ scientist.dob }}</p>
+              <p><b class="tags">Field of Research:</b> {{ scientist.field_of_research }}</p>
+              <p><b class="tags">Is Nobel Laureate:</b> {{ scientist.nobel_laureate }}</p><br>
+          </div>
+          {% if session.user %}
+          <div class="card-action center-align">
+              <a href="{{ url_for('scientist', scientist_id=scientist._id) }}" class="waves-effect btn-small light-green darken-1" target=”_blank”>More Details</a>
+          </div>
+          {% endif %}
+          
+      </div>
+      
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+
 {% endblock %}

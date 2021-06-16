@@ -5,6 +5,7 @@ from flask import (
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
+import datetime
 if os.path.exists("env.py"):
     import env
 
@@ -22,7 +23,8 @@ mongo = PyMongo(app)
 @app.route("/home")
 def home():
     home = mongo.db.scientists.find()
-    return render_template("home.html", home=home)
+    recent = list(mongo.db.scientists.find().sort("date", -1))
+    return render_template("home.html", home=home, recent=recent)
 
 
 @app.route("/scientists")
@@ -102,7 +104,8 @@ def add_scientist():
             "description": request.form.get("description"),
             "nobel_laureate": request.form.get("nobel_laureate"),
             "url": request.form.get("url"),
-            "added_by": session["user"]
+            "added_by": session["user"],
+            "date": datetime.datetime.utcnow()
         }
         mongo.db.scientists.insert_one(scientist)
         flash("Scientist was Succesfully Added")
@@ -124,7 +127,7 @@ def edit_scientist(scientist_id):
         }
         mongo.db.scientists.update({"_id": ObjectId(scientist_id)}, send)
         flash("Scientist was updated")
-        return redirect(url_for("edit_page"))
+        return redirect(url_for("scientists"))
 
     scientist = mongo.db.scientists.find_one({"_id": ObjectId(scientist_id)})
     return render_template("edit_scientist.html", scientist=scientist)
@@ -134,7 +137,7 @@ def edit_scientist(scientist_id):
 def delete_scientist(scientist_id):
     mongo.db.scientists.remove({"_id": ObjectId(scientist_id)})
     flash("Scientist deleted")
-    return redirect(url_for("edit_page"))
+    return redirect(url_for("scientists"))
 
 
 @app.route("/logout")
