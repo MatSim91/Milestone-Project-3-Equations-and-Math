@@ -192,7 +192,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
     - [PEP8 online check](http://pep8online.com/) - Succesfully passed through the PEP8 validator.
 
-    - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools) - Was used to check overall page performance
+    - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools) - Was used to check homepage page performance
         - ![Google Lighthouse Results](static/images/project/lighthouse.jpg)
 
 ## Testing User Stories
@@ -216,34 +216,85 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 ## Additional Testing
 
--   ### Testing page :
-    1. Checking the 
+    - All the testing was done via the app deployed to Heroku (on compendium-of-scientists.herokuapp.com/home)
+
+-   ### Testing base template (base.html):
+
+    1. When clicking on the Navbar options the correct page link should work.
+
+    2. Tested the mobile sidebar and tested the different pages links.
+
+    3. Tested the Flash messages to make sure they were working when the user Log In and displays the "Welcome, user" message.
+
+    4. Tested all the Links on the navbar to make sure they are working fine and are being opened in a new tab.
+
+-   ### Testing Homepage :
+    1. Checking the overall responsivness of the page on different emulated devices and different browsers already specified under the Testing category.
     
-    2. When clicking on  
+    2. When User is Logged In: Checked the "More Details" button under each one of the three "Famous Scientists" section to make sure the detailed page opens for the correct scientst. 
+        1.  When User is Logged Out: Tested to make sure this option is hidden.
     
-    3. Tested
+    3. Tested the "Recent Additions" section to make sure the loop is working and displaying the latest six scientists added to the database. 
+        1.  When User is Logged In: Tested the "More Details" option to make sure it was working and displaying. 
+        2.   When User is Logged Out: Checked the "More Details" option to make sure it was not displaying.
 
--   ### Testing page game.html:
-    1. Checked if 
-        1.1 Tested 
-        1.2 Tested 
+-   ### Testing Compendium page (compendium.html):
+    1. Tested the Search Bar to make sure the "Reset" option works and clean the filtered searchs.
 
-    2. Tested the 
+    2. Tested the "Search" option to make sure it was searching correctly the Scientist Name, Born in field, Field of Research and Nobel Laureate.
 
-    3. Tested the
-        - 
+    3. Tested the "More Details" option to make sure it was opening the correct scientist detailed page.
 
-    4. Tested the 
-        - 
+-   ### Testing Detailed Scientists page (scientists.html):
+    1. Made sure when the "More Details" option is clicked on the scientist that his detailed page with the correct information would load out and display.
 
-    5. Tested the 
-        - 
+    2. Tested that all whe Wikipedia links on the scientist detailed page (/scientists/scientist_id) are working and opening the Wikipedia site in a new tab.
 
-    6. Tested the 
+    3. Tested the "Delete" option on the scientist detailed page (/scientists/scientist_id) to make sure the scientists are indeed deleted from the database
 
-    7. Tested the 
+    4. Tested the "Edit" option on the scientist detailed page (/scientists/scientist_id) to make sure it would redirect to the correct edit_scientist.html page
 
-    8. Tested the 
+-   ### Testing Add page (add_scientist.html):
+    1. Added several test scientists and checked the database to make sure they were added correctly.
+
+    2. Tested the required option on the fields: Scientist Name, Country of Birth, Date of Birth, Field of Research and Short Description. Also tested the minimum and maximum lenght required for each field:
+
+-   ### Testing Logout option:
+    1. Tested the Flash message that appears when User Logs out: "You have succesfully logged out"
+
+    2. Made sure the cookie session is cleared after User Logs out and that the "More Details" option are hidden, as well with the Nav Bar options: "Add" and "Logout"
+
+    3. Tested the redirection to the "Log In Page" after Users logs out.
+
+-   ### Testing Sign Up option:
+    1. Tested trying add an Username that already exists on the database and that it displays the Flash Message "This User already exists"
+
+    2. Tested the only accepted format: Alphanumeric and minimum and maximum lenght for the "User" field and the "Password" field.
+
+    3. Tested the redirection after User is succesfully registered to the Homepage and checked that is shows the correct flash message "Registration Successful!" on the homepage.
+
+    4. Tested required fields for "User" and "Password"
+
+    5. Tested the Link option to redirect to the "Log In" page if the User is already registered.
+
+-   ### Testing Log In option:
+    1. Tested the Flash message that appears when User tries to Log In with a wrong User or Password: "Incorrect User and/or Password"
+
+    2. Tested the succesfull log in and the redirection to the homepage and the Flash message that appears: "Welcome, user"
+
+    3. Tested required fields for "User" and "Password"
+
+    4. Tested the Link option to redirect to the Sign Up page if the User is not registered yet.
+
+-   ### Testing edit_scientist.html Page:
+    1. Made sure the details for: Scientist Name, Country of Birth, Date of Birth, Field of Research, and Wikipedia URL are pre-filled with the current information.
+
+    2. Tested the "Cancel" option to make sure nothing was updated on the database and that the page redirects back to the compendium page.
+
+    3. Tested the "Update" option and made sure the modified scientist details were modified on the database.
+
+-   ### Testing remaining Features:
+
 
 ## Bugs and Fixes
 
@@ -341,10 +392,6 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 - [w3schools](https://www.w3schools.com/css/css_tooltip.asp) - From W3Schools got the idea of adding a Tooltip to help users on the sign up page regarding the user and password requirements. 
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Main_Page) - For providing such a large amount of details regarding the scientists I have added on the database.
-
-- 
-
--
 
 - [Code Institute Course](https://codeinstitute.net/) for helping with the register and login/logout functionality.
 
