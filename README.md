@@ -152,9 +152,9 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 # Testing
 
-- 
+- The website was tested in Google Chrome, Microsoft Edge, Mozilla Firefox, both on Windows and Mac OS.
 
-- 
+- Through the Console device toolbar it was also tested using the following emulated devices: Moto G4, Galaxy S5, Pixel 2, iPhone 5/SE iPhone 6/7/8, iPhone X, iPad, iPad Pro, Surface Duo.
 
 - 
 
@@ -320,13 +320,13 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 - [w3schools](https://www.w3schools.com/css/css_tooltip.asp) - From W3Schools got the idea of adding a Tooltip to help users on the sign up page regarding the user and password requirements. 
 
--
+- [Wikipedia](https://en.wikipedia.org/wiki/Main_Page) - For providing such a large amount of details regarding the scientists I have added on the database.
 
 - 
 
 -
 
--
+- [Code Institute Course](https://codeinstitute.net/) for helping with the register and login/logout functionality.
 
 - [Materialize:](https://materializecss.com/) for the amount of free features that we can add.
 
@@ -340,17 +340,15 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 - [Materialize:](https://materializecss.com/) - Materialize Library used throughout the whole project.
 
-- 
-
-- 
+- [w3schools](https://www.w3schools.com/css/css_tooltip.asp) - From W3Schools got the idea of adding a Tooltip to help users on the sign up page regarding the user and password requirements. 
 
 ## Content
 
--  No external content was used for this project.
+-  The scientists details and description were taken from [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)
 
 ## Media
 
--  
+-  The media for the featured scientists were taken from [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)
 
 ## Acknowledgements
 
