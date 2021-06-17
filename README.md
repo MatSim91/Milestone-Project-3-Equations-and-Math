@@ -162,13 +162,13 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 - The W3C Markup Validator and W3C CSS Validator Services:
 
-    -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - 
+    -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - No errors were found except the parse errors due to the Jinja code.
 
-    -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - 
+    -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - No errors were found.
 
-    - [Web Formatter](https://webformatter.com/) - 
+    - [Web Formatter](https://webformatter.com/) - Was also used for checking for any errors in HTML and CSS.
 
-    - [JavaScript Validator](https://jshint.com) - 
+    - [JavaScript Validator](https://jshint.com) - No errors were found.
 
     - [PEP8 online check](http://pep8online.com/) - Succesfully passed through the PEP8 validator.
 
@@ -178,19 +178,21 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 ## Testing User Stories
 
 -   ### First Time Visitor Goals
-    1. As a first time user entering the site the
-    2. As a first time user the site is easy to navigate with
-    3. As a first time user wanting to know exactly how 
+    1. As a first time user entering the site the I check the homepage to get more information on what the site is about.
+    2. As a first time user I can navigate via the menu to the different pages and register my account on the register page.
+    3. As a first time user I can see the site is easy to navigate either via a computer or via a mobile screen by using the navbar and the side navbar.
 
 -   ### Returning Visitor Goals
-    1. As a returning user
-    2. As a returning user
-    3. As a returning user
+    1. As a returning user I can have my session cookie saved so I don't need to login back to the site.
+    2. As a returning user I can easily check the compendium and see all the scientists added there.
+    3. As a returning user I can check the featured scientists and the most recent scientists added by checking the homepage.
+    4. As a returning user I can search for my favorite scientists using the search bar.
 
 -   ### Frequent Visitor Goals
-    1. As a return user that 
-    2. As a return user I can 
-    3. As a return user I can
+    1. As a return user I can either login to my registered account without needing to register again.
+    2. As a return user I can check the Add page to add more scientists to the database.
+    3. As a return user I can check each scientist information with more details and then edit the scientists and update their information.
+    4. As a return user I can search for a particular scientist and edit that particular scientist and update his information.
 
 ## Additional Testing
 
