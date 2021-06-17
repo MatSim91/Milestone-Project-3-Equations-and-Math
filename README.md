@@ -1,6 +1,6 @@
 <h1 align="center">Milestone Project 3 - The Compendium of Scientists</h1>
 
-![Compendium Mockup](static/images/Responsive-design.JPG)
+![Compendium Mockup](static/images/project/scientia_mockup.jpg)
 
 [Click here to view the live project :link:](https://compendium-of-scientists.herokuapp.com/)
 
@@ -31,7 +31,9 @@ The Compendium of Scientists is a project created to gather information about al
 
 # User Experience
 
-User Experience Description
+The site was made with the intention of being bery easy for any user to navigate through it, to register an account, login/logout and edit and add new scientists to the database. Users can navigate to all the pages through the navbar and by selecting each scientist to view them in more details they open the options to edit or to delete the scientist.
+
+While viewing the website the experience I wanted the user to feel was not being too distracted by colors as the main intent of the site is to provide written information and knowledge, so that is why I chose neutral colors like Black, White and Grey. Also due to the Science having such a large history and coming from such a long way these colors would give a more old look to the site, while the modern font would show the more futuristic and modern side. I wanted to combine old and new to represent that science is our past, our present and our future.
 
 -   ## User stories
 
