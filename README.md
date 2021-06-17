@@ -78,11 +78,9 @@ While viewing the website the experience I wanted the user to feel was not being
 
     - The wireframe was developed using [balsamiq](https://balsamiq.com/).
 
-    - The wireframe was created thinking about making the 
+    - Homepage wireframe (home.html) Wireframe - [View](https://github.com/MatSim91/Milestone-Project-3-The-Compendium-of-scientists/blob/master/static/images/project/homepage.jpg)
 
-    - Landing Page wireframe (base.html) Wireframe - [View](https://github.com/MatSim91/Milestone-Project-3) - The landing page wireframe 
-
-    - 
+    - Compendium wirefram (compendium.html) - [View](https://github.com/MatSim91/Milestone-Project-3-The-Compendium-of-scientists/blob/master/static/images/project/compendium.jpg)
 
 -    ## MongoDB Database
      ### **scientists collection**
