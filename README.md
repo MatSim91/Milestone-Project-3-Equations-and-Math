@@ -50,7 +50,7 @@ While viewing the website the experience I wanted the user to feel was not being
         3. As a Returning user, I want to check the featured scientists and the most newly added scientists.
         4. As a Returning user, I want to check for my favorite scientists in a quick and easy way.
     
-    - ### Frequent 
+    - ### Frequent Visitor Goals
         1. As a Frequent user, I want to quickly return to my already registered account.
         2. As a Frequent user, I want to add more scientists to the database.
         3. As a Frequent user, I want to edit and add more detailed information to the already added scientists.
@@ -107,9 +107,9 @@ While viewing the website the experience I wanted the user to feel was not being
 
 # Features
 
-- **View all scientists added in the database** - Users can view the entire scientists database collection on the scientsts.html page.
+- **View all scientists added to the database** - Users can view the entire scientists database collection on the scientsts.html page.
 
-- **Adding a new scientist** - Users can add a new scientist by clicking on the "Add" option on the navbar and filling the form information.
+- **Adding a new scientist** - Users can add a new scientist by clicking on the "Add" option on the navbar and filling in the form information.
 
 - **Editing an already added scientist** - Users can edit each scientist by clicking on the "More Details" option on the scientist card to show the "Edit" button on the detailed page.
 
@@ -117,11 +117,11 @@ While viewing the website the experience I wanted the user to feel was not being
 
 - **Search bar on the scientists.html page** - Allow Users to look for specific Scientist names, Country Born, Field of Research, and if it is a Nobel Laureate.
 
-- **Session cookie user** - Saves a session cookie so Users don't need to keep login in everytime they re-open the website.
+- **Session cookie user** - Saves a session cookie so Users don't need to keep login in every time they re-open the website.
 
-- **Hide/Show "More Details" option** - Based if the User status this option can be showed/hidden. If user is logged-in the "More Details" option appears allowing logged in Users to Edit and Delete scientists. If user is logged-out this option is hidden.
+- **Hide/Show "More Details" option** - Based if the User status this option can be showed/hidden. If the User is logged-in the "More Details" option appears allowing logged in Users to Edit and Delete scientists. If user is logged out this option is hidden.
 
-- **Recent Additions** - A for loop gathers the latest six scientsts that were added in the database and displays then in the homepage.
+- **Recent Additions** - A for loop gathers the latest six scientists that were added to the database and displays them on the homepage.
 
 # Technologies Used
 
@@ -137,10 +137,10 @@ A brief overview of the languages, frameworks, and other tools I've used on this
     - Loaded Materialize to provide all its pre-built classes, grid and classes functions.
 
 - [JavaScript](https://www.javascript.com)
-   - Used to add interactive functions to the site.
+   - Used to add interactivity to the site.
 
 - [Python](https://pt.wikipedia.org/wiki/Python)
-    - To build the backend and render the pages.
+    - Used to build the backend and render the pages.
 
 # Languages Used
 
@@ -198,8 +198,6 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 - Through the Console device toolbar it was also tested using the following emulated devices: Moto G4, Galaxy S5, Pixel 2, iPhone 5/SE iPhone 6/7/8, iPhone X, iPad, iPad Pro, Surface Duo.
 
-- 
-
 - Used [Am I Responsive](http://ami.responsivedesign.is/#) for testing different viewports and a [Mockup Generator](http://techsini.com/multi-mockup/index.php) 
 
 - The W3C Markup Validator and W3C CSS Validator Services:
@@ -231,29 +229,29 @@ A brief overview of the languages, frameworks, and other tools I've used on this
     4. As a returning user I can search for my favorite scientists using the search bar.
 
 -   ### Frequent Visitor Goals
-    1. As a return user I can either login to my registered account without needing to register again.
+    1. As a return user I can either log in to my registered account without needing to register again.
     2. As a return user I can check the Add page to add more scientists to the database.
     3. As a return user I can check each scientist information with more details and then edit the scientists and update their information.
     4. As a return user I can search for a particular scientist and edit that particular scientist and update his information.
 
 ## Additional Testing
 
-    - All the testing was done via the app deployed to Heroku (on compendium-of-scientists.herokuapp.com/home)
+    All testing was done via the app deployed to Heroku (on compendium-of-scientists.herokuapp.com/home)
 
 -   ### Testing base template (base.html):
 
     1. When clicking on the Navbar options the correct page link should work.
 
-    2. Tested the mobile sidebar and tested the different pages links.
+    2. Tested the mobile sidebar and tested the different page links.
 
     3. Tested the Flash messages to make sure they were working when the user Log In and displays the "Welcome, user" message.
 
     4. Tested all the Links on the navbar to make sure they are working fine and are being opened in a new tab.
 
 -   ### Testing Homepage :
-    1. Checking the overall responsivness of the page on different emulated devices and different browsers already specified under the Testing category.
+    1. Checking the overall responsiveness of the page on different emulated devices and different browsers already specified under the Testing category.
     
-    2. When User is Logged In: Checked the "More Details" button under each one of the three "Famous Scientists" section to make sure the detailed page opens for the correct scientst. 
+    2. When User is Logged In: Checked the "More Details" button under each one of the three "Famous Scientists" sections to make sure the detailed page opens for the correct scientist. 
         1.  When User is Logged Out: Tested to make sure this option is hidden.
     
     3. Tested the "Recent Additions" section to make sure the loop is working and displaying the latest six scientists added to the database. 
@@ -261,7 +259,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
         2.   When User is Logged Out: Checked the "More Details" option to make sure it was not displaying.
 
 -   ### Testing Compendium page (compendium.html):
-    1. Tested the Search Bar to make sure the "Reset" option works and clean the filtered searchs.
+    1. Tested the Search Bar to make sure the "Reset" option works and clean the filtered search.
 
     2. Tested the "Search" option to make sure it was searching correctly the Scientist Name, Born in field, Field of Research and Nobel Laureate.
 
@@ -270,7 +268,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 -   ### Testing Detailed Scientists page (scientists.html):
     1. Made sure when the "More Details" option is clicked on the scientist that his detailed page with the correct information would load out and display.
 
-    2. Tested that all whe Wikipedia links on the scientist detailed page (/scientists/scientist_id) are working and opening the Wikipedia site in a new tab.
+    2. Tested that all the Wikipedia links on the scientist detailed page (/scientists/scientist_id) are working and opening the Wikipedia site in a new tab.
 
     3. Tested the "Delete" option on the scientist detailed page (/scientists/scientist_id) to make sure the scientists are indeed deleted from the database
 
@@ -279,21 +277,21 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 -   ### Testing Add page (add_scientist.html):
     1. Added several test scientists and checked the database to make sure they were added correctly.
 
-    2. Tested the required option on the fields: Scientist Name, Country of Birth, Date of Birth, Field of Research and Short Description. Also tested the minimum and maximum lenght required for each field:
+    2. Tested the required option on the fields: Scientist Name, Country of Birth, Date of Birth, Field of Research and Short Description. Also tested the minimum and maximum length required for each field:
 
 -   ### Testing Logout option:
-    1. Tested the Flash message that appears when User Logs out: "You have succesfully logged out"
+    1. Tested the Flash message that appears when User Logs out: "You have successfully logged out"
 
-    2. Made sure the cookie session is cleared after User Logs out and that the "More Details" option are hidden, as well with the Nav Bar options: "Add" and "Logout"
+    2. Made sure the cookie session is cleared after User Logs out and that the "More Details" option is hidden, as well with the Nav Bar options: "Add" and "Logout"
 
     3. Tested the redirection to the "Log In Page" after Users logs out.
 
 -   ### Testing Sign Up option:
-    1. Tested trying add an Username that already exists on the database and that it displays the Flash Message "This User already exists"
+    1. Tested trying to add a Username that already exists on the database and that it displays the Flash Message "This User already exists"
 
-    2. Tested the only accepted format: Alphanumeric and minimum and maximum lenght for the "User" field and the "Password" field.
+    2. Tested the only accepted format: Alphanumeric and minimum and maximum length for the "User" field and the "Password" field.
 
-    3. Tested the redirection after User is succesfully registered to the Homepage and checked that is shows the correct flash message "Registration Successful!" on the homepage.
+    3. Tested the redirection after User is successfully registered to the Homepage and checked that it shows the correct flash message "Registration Successful!" on the homepage.
 
     4. Tested required fields for "User" and "Password"
 
@@ -302,14 +300,14 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 -   ### Testing Log In option:
     1. Tested the Flash message that appears when User tries to Log In with a wrong User or Password: "Incorrect User and/or Password"
 
-    2. Tested the succesfull log in and the redirection to the homepage and the Flash message that appears: "Welcome, user"
+    2. Tested the successful login and the redirection to the homepage and the Flash message that appears: "Welcome, user"
 
     3. Tested required fields for "User" and "Password"
 
     4. Tested the Link option to redirect to the Sign Up page if the User is not registered yet.
 
 -   ### Testing edit_scientist.html Page:
-    1. Made sure the details for: Scientist Name, Country of Birth, Date of Birth, Field of Research, and Wikipedia URL are pre-filled with the current information.
+    1. Made sure the details for Scientist Name, Country of Birth, Date of Birth, Field of Research, and Wikipedia URL are pre-filled with the current information.
 
     2. Tested the "Cancel" option to make sure nothing was updated on the database and that the page redirects back to the compendium page.
 
