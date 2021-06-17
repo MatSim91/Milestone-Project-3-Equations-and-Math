@@ -85,21 +85,21 @@ While viewing the website the experience I wanted the user to feel was not being
 
 # Features
 
-- View all scientists added in the database - Users can view the entire scientists database collection on the scientsts.html page.
+- **View all scientists added in the database** - Users can view the entire scientists database collection on the scientsts.html page.
 
-- Adding a new scientist - Users can add a new scientist by clicking on the "Add" option on the navbar and filling the form information.
+- **Adding a new scientist** - Users can add a new scientist by clicking on the "Add" option on the navbar and filling the form information.
 
-- Editing an already added scientist - Users can edit each scientist by clicking on the "More Details" option on the scientist card to show the "Edit" button on the detailed page.
+- **Editing an already added scientist** - Users can edit each scientist by clicking on the "More Details" option on the scientist card to show the "Edit" button on the detailed page.
 
-- Deleting a scientist - Users can delete a scientist by clicking on the "More Details" option on the scientist card to show the "Delete" button on the detailed page.
+- **Deleting a scientist** - Users can delete a scientist by clicking on the "More Details" option on the scientist card to show the "Delete" button on the detailed page.
 
-- Search bar on the scientists.html page to look for specific Scientist names, Country Born, Field of Research, and if it is a Nobel Laureate.
+- **Search bar on the scientists.html page** - Allow Users to look for specific Scientist names, Country Born, Field of Research, and if it is a Nobel Laureate.
 
-- Session cookie user - Saves a session cookie so Users don't need to keep login in everytime they re-open the website.
+- **Session cookie user** - Saves a session cookie so Users don't need to keep login in everytime they re-open the website.
 
-- Hide/Show "More Details" option - Based if the User status this option can be showed/hidden. If user is logged-in the "More Details" option appears allowing logged in Users to Edit and Delete scientists. If user is logged-out this option is hidden.
+- **Hide/Show "More Details" option** - Based if the User status this option can be showed/hidden. If user is logged-in the "More Details" option appears allowing logged in Users to Edit and Delete scientists. If user is logged-out this option is hidden.
 
-- Recent Additions - A for loop gathers the latest six scientsts that were added in the database and displays then in the homepage.
+- **Recent Additions** - A for loop gathers the latest six scientsts that were added in the database and displays then in the homepage.
 
 # Technologies Used
 
@@ -115,7 +115,10 @@ A brief overview of the languages, frameworks, and other tools I've used on this
     - Loaded Materialize to provide all its pre-built classes, grid and classes functions.
 
 - [JavaScript](https://www.javascript.com)
-   - Used to add interactive, for modal pop-up and for the memory game to run properly.
+   - Used to add interactive functions to the site.
+
+- [Python](https://pt.wikipedia.org/wiki/Python)
+    - To build the backend and render the pages.
 
 # Languages Used
 
@@ -126,30 +129,47 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 # Frameworks Libraries and Programs Used
 
-1. [Materialize:](https://materializecss.com/)
+1. [Materialize](https://materializecss.com/)
     - Materialize was used to assist with the responsiveness and styling of the website.
 
 2. [JavaScript Validator](https://jshint.com)
     - Used to check and validate all JavaScript code to check for any typos or errors.
 
-3. [Google Fonts:](https://fonts.google.com/)
+3. [Google Fonts](https://fonts.google.com/)
     - Google fonts was used to import the 
 
 4. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 
-5. [GitHub:](https://github.com/)
+5. [GitHub](https://github.com/)
     - GitHub was used to store the projects code after being pushed from Git.
 
-6. [Balsamiq:](https://balsamiq.com/)
+6. [Balsamiq](https://balsamiq.com/)
     - Balsamiq was used to create the [Wireframes](#wireframes) during the design process.
 
 7. [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
     - Used for testing and fixing website bugs. Also used Google Lighthouse for performance testing.
 
-8. [Google Icons:](https://google.github.io/material-design-icons/#icon-font-for-the-web)
-    - Google Icons was used on the 
+8. [Google Icons](https://google.github.io/material-design-icons/#icon-font-for-the-web)
+    - Google Icons was used on the site to improve visual design.
 
+9. [JQuery](https://jquery.com/)
+    - DOM manipulation to initiate the interactive functions from Materialize.
+
+10. [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+    - Micro-framework.
+
+11. [Jinja](https://www.palletsprojects.com/p/jinja/)
+     -  Template engine for Python.
+
+12. [Werkzeug](https://www.palletsprojects.com/p/werkzeug/)
+    - Comprehensive Web Server Gateway Interface web application library.
+
+13. [Heroku](https://www.heroku.com/)
+    - Enabling this project to be build, run, and operate entirely in the cloud.
+
+14. [MongoDB](https://www.mongodb.com/)
+    -  NoSQL database used for the project.
 # Testing
 
 - The website was tested in Google Chrome, Microsoft Edge, Mozilla Firefox, both on Windows and Mac OS.
