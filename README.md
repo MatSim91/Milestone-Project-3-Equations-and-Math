@@ -313,31 +313,28 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
     3. Tested the "Update" option and made sure the modified scientist details were modified on the database.
 
--   ### Testing remaining Features:
-
-
 ## Bugs and Fixes
 
-1. While creating the
-	- 1.1 **Fix:** 
+1. After adding an href with the url_for the compendium page it showed a "werkzeug.routing.BuildError".
+	- 1.1 **Fix:** After further checking the app.py page I saw that the function name below the @app.route("/scientists") was wrong.
 
-2. While trying to 
-    - 2.1 **Fix:**
+2. After adding the Jinja for loop for "{% for scientist in scientists %}" and trying to generate the list of all the scientists that were added in the database to display them as cards on the compendium.html page the cards were displayed with a strange broken template.
+    - 2.1 **Fix:** After checking with a bit more detail I saw that I had added the beggining of the for loop inside the col div. After I moved the beginning of the loop one div up (under the row) the cards displayed correctly.
 
-3. While running the
-    - 3.1 **Fix:**
+3. In some CSS classes like focus and hover only adding the new style didn't changed anything on the site and the Materialize classes were still the same
+    - 3.1 **Fix:** I had to add the !important option in order for the new style to be updated and overwritte the pre-built class from Materialize.
 
-4. While trying to 
-    - 4.1 **Fix:**
+4. While adding the search bar feature the python3 app.py port 8080 was closed and the terminal returned the error "SyntaxError: closing parenthesis ')' does not match opening parenthesis '{'"
+    - 4.1 **Fix:** After checking the search function and looking for any missing parenthesis I have found that I needed to add a closing brackets after "$search": query.
 
-5. The 
-    - 5.1: **Fix:**
+5. After finishing adding the search bar function and running app.py I was testing the search bar but when I clicked on "Search" it returned with the error "bson.errors.InvalidDocument"
+    - 5.1: **Fix:** I re-checked the search function and found the error to be on: {"$search: query"}})) as the query was inside the quotes. I fixed by adding the qyotes only to "$search:"
 
-6. The project was not passing through the
-    - 6.1 **Fix:**
+6. While implementing the date when the scientists were added to the database and when I was testing to add a new scientist to see if the date stamp was going to work everytime that I clicked on the "Add Scientist" button it didn't do anything.
+    - 6.1 **Fix:** I forgot to import the datetime on the beginning of the app.py file.
 
-7. After adding
-    7.1 **Fix**
+7. After running the app.py python code on the PEP8 validator it returned the message "continuation line with same indent as next logical line"
+    7.1 **Fix** The indendation below the login function for the  "if check_password_hash" was wrong. I fixed the indendation, and it fixed the problem.
 
 # Deployment
 
