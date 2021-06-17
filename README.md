@@ -202,7 +202,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 - The W3C Markup Validator and W3C CSS Validator Services:
 
-    -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - No errors were found except the parse errors due to the Jinja code.
+    -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri) - Validated all pages HTML by URL to avoid false error flags regarding Jinja. Only one error was found but it's related to the external Materialize source from https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css
 
     -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - No errors were found.
 
