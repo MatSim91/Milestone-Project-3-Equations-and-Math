@@ -12,6 +12,7 @@ The Compendium of Scientists is a project created to gather information about al
     - [User stories](#user-stories)
     - [Design](#design)
     - [Wireframes](#wireframes)
+    - [MongoDB Database](#mongodb-database)
 2. [Features](#features)
 3. [Technologies Used](#technologies-used)
 4.  [Languages Used](#languages-used)
@@ -84,26 +85,27 @@ While viewing the website the experience I wanted the user to feel was not being
     - 
 
 -    ## MongoDB Database
-    -   scientists collection 
-            **Title**|**Key in Collection**|**Data Type**
-            :-----:|:-----:|:-----:
-            Scientist ID|_id|ObjectId()
-            Name|name|String
-            Country Born|country_born|String
-            Date of Birth|dob|String
-            Field of Research|field_of_research|String
-            Description|description|String
-            Nobel Laureate|nobel_laureate|Boolean
-            URL|url|String
-            Added By|added_by|String
-            Created Date|date|Date
+     ### **scientists collection**
+        **Title**|**Key in Collection**|**Data Type**
+        :-----:|:-----:|:-----:
+        Scientist ID|_id|ObjectId()
+        Name|name|String
+        Country Born|country_born|String
+        Date of Birth|dob|String
+        Field of Research|field_of_research|String
+        Description|description|String
+        Nobel Laureate|nobel_laureate|Boolean
+        URL|url|String
+        Added By|added_by|String
+        Created Date|date|Date
 
-    - users collection
-            **Title**|**Key in Collection**|**Data Type**
-            :-----:|:-----:|:-----:
-            User ID|_id|ObjectId()
-            Username|username|String
-            Password|password|String
+
+     ### **users collection**
+        **Title**|**Key in Collection**|**Data Type**
+        :-----:|:-----:|:-----:
+        User ID|_id|ObjectId()
+        Username|username|String
+        Password|password|String
 
 # Features
 
