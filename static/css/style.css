@@ -95,6 +95,11 @@ margin-bottom: -20px;
   font-weight: 500;
 }
 
+.scientia-description {
+  font-size: 25px;
+  margin: 50px;
+}
+
 /*--- Signup Page ---*/
 
 .registration-border {

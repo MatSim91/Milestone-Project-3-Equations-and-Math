@@ -1,10 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1 class="center"> Homepage</h1>
-
-<h3 class="center">Some Famous Scientists:</h3>
-
+<h1 class="center">Scientia</h1>
+<hr>
+<div class="row">
+  <div class="col s12 m10 offset-m1 white scientia-description card">
+    <p>Science or Scientia from Latin, means "knowledge". It's the systematic study of the structure and behaviour of the physical and natural world through observation and experiment.</p>
+    <p>Here you can learn all about the greatest scientists and their discoveries and you can also contribute to this open Scientific Compendium!</p>
+  </div>
+</div>
+<h2 class="center">Famous Scientists</h2>
+<hr>
 <div class="row">
   <div class="col s12 m4">
     <div class="card">
@@ -57,8 +63,8 @@
 </div>
 
 <!---- For loop showing most recent scientists added --->
-<h3 class="center">Recent Additions</h3>
-
+<h2 class="center">Recent Additions</h2>
+<hr>
 <div class="row">
   {% for scientist in recent %}
   {% if loop.index < 7 %}
