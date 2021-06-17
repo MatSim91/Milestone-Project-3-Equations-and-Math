@@ -56,9 +56,9 @@ User Experience Description
 -   ## Design
     -   ### Colour Scheme
 
-        - The Colour Scheme was carefully chosen to provide a neutral and not so flashy website to the User. As several famous scientists lived in a century where color photography was not yet invented (prior to 1907) the pallete was chosen to show that scientific history is old and it comes a long way. I didn't want to make the website colors to stand out more than the scientist's pictures.
+        - The Colour Scheme was carefully chosen to provide a neutral and not so flashy website to the User. As several famous scientists lived in a century where color photography was not yet invented (prior to 1907) the palette was chosen to show that scientific history is old and it comes a long way. I didn't want to make the website colors to stand out more than the scientist's pictures.
 
-        - [Coolors](https://coolors.co/000000-ffffff-727272-e9e9e9-546e7a) was used to choose the color pallete.
+        - [Coolors](https://coolors.co/000000-ffffff-727272-e9e9e9-546e7a) was used to choose the color palette.
 
         - The main colors used were: Black [#000000], White [#FFFFFF], Sonic Silver [#727272], Platinum [#E9E9E9] and Cadet [#546E7A].
 
@@ -66,7 +66,7 @@ User Experience Description
 
     -   ### Typography
 
-        - The font choose 
+        - The font chosen was the Barlow font. I have chosen this font to give a more modern/futuristic look to the site. As the color palette shows a more old and historic site I wanted to balance things out with a modern font. Even though the scientific discoveries are scattered along the centuries and they marked our past history, the science and the discoveries are also the future. By choosing the right Font and Color was an attempt to find a balance between the past-future.
 
         - The font was imported from [Google Fonts](https://fonts.google.com/)
 
