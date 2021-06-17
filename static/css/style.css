@@ -97,7 +97,13 @@ margin-bottom: -20px;
 
 .scientia-description {
   font-size: 25px;
-  margin: 50px;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+}
+
+.section-margin {
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
 }
 
 /*--- Signup Page ---*/

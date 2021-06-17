@@ -111,8 +111,8 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
     - Cascading Style Sheets as the design of the site.
 
-- [Bootstrap](https://getbootstrap.com/docs/4.0/layout/grid/)
-    - Loaded Bootstrap to provide all its pre-built classes, grid and font functions.
+- [Materialize:](https://materializecss.com/)
+    - Loaded Materialize to provide all its pre-built classes, grid and classes functions.
 
 - [JavaScript](https://www.javascript.com)
    - Used to add interactive, for modal pop-up and for the memory game to run properly.
@@ -122,6 +122,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -   [JavaScript](https://pt.wikipedia.org/wiki/JavaScript)
+-   [Python](https://pt.wikipedia.org/wiki/Python)
 
 # Frameworks Libraries and Programs Used
 
@@ -179,7 +180,12 @@ A brief overview of the languages, frameworks, and other tools I've used on this
     2. As a first time user the site is easy to navigate with
     3. As a first time user wanting to know exactly how 
 
--   ### Returning and Frequent Visitor Goals
+-   ### Returning Visitor Goals
+    1. As a returning user
+    2. As a returning user
+    3. As a returning user
+
+-   ### Frequent Visitor Goals
     1. As a return user that 
     2. As a return user I can 
     3. As a return user I can
@@ -328,7 +334,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 ## Code
 
-- [Bootstrap4](https://getbootstrap.com/docs/4.5/getting-started/introduction/) - Bootstrap Library used throughout the project to make it easier using the grid system and pre-maded classes.
+- [Materialize:](https://materializecss.com/) - Materialize Library used throughout the whole project.
 
 - 
 
@@ -344,4 +350,4 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 ## Acknowledgements
 
-- 
+- My mentor Akshat for all his help and ideas.
