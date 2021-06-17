@@ -31,9 +31,9 @@ The Compendium of Scientists is a project created to gather information about al
 
 # User Experience
 
-The site was made with the intention of being bery easy for any user to navigate through it, to register an account, login/logout and edit and add new scientists to the database. Users can navigate to all the pages through the navbar and by selecting each scientist to view them in more details they open the options to edit or to delete the scientist.
+The site was made with the intention of being easy for any user to navigate through it, register an account, log in/log out and edit and add new scientists to the database. Users can navigate to all the pages through the navbar and by selecting each scientist to view them in more detail they open the options to edit or to delete the scientist.
 
-While viewing the website the experience I wanted the user to feel was not being too distracted by colors as the main intent of the site is to provide written information and knowledge, so that is why I chose neutral colors like Black, White and Grey. Also due to the Science having such a large history and coming from such a long way these colors would give a more old look to the site, while the modern font would show the more futuristic and modern side. I wanted to combine old and new to represent that science is our past, our present and our future.
+While viewing the website the experience I wanted the user to feel was not being too distracted by colors as the main intent of the site is to provide written information and knowledge, so that is why I chose neutral colors like Black, White, and Grey. Also due to the Science having such a large history and coming from such a long way these colors would give a more old look to the site, while the modern font would show the more futuristic and modern side. I wanted to combine old and new to represent that science is our past, our present, and our future.
 
 -   ## User stories
 
@@ -83,25 +83,23 @@ While viewing the website the experience I wanted the user to feel was not being
 
     - 
 
-    - Possible future update to the project
-
 # Features
 
--  
+- View all scientists added in the database - Users can view the entire scientists database collection on the scientsts.html page.
 
-- 
+- Adding a new scientist - Users can add a new scientist by clicking on the "Add" option on the navbar and filling the form information.
 
-- 
+- Editing an already added scientist - Users can edit each scientist by clicking on the "More Details" option on the scientist card to show the "Edit" button on the detailed page.
 
-- 
+- Deleting a scientist - Users can delete a scientist by clicking on the "More Details" option on the scientist card to show the "Delete" button on the detailed page.
 
-- 
+- Search bar on the scientists.html page to look for specific Scientist names, Country Born, Field of Research, and if it is a Nobel Laureate.
 
-- 
+- Session cookie user - Saves a session cookie so Users don't need to keep login in everytime they re-open the website.
 
-- 
+- Hide/Show "More Details" option - Based if the User status this option can be showed/hidden. If user is logged-in the "More Details" option appears allowing logged in Users to Edit and Delete scientists. If user is logged-out this option is hidden.
 
-- 
+- Recent Additions - A for loop gathers the latest six scientsts that were added in the database and displays then in the homepage.
 
 # Technologies Used
 
