@@ -38,26 +38,31 @@ User Experience Description
     -   ### First Time Visitor Goals
         1. As a First Time user, I want to access the website and know what it is about.
         2. As a First Time user, I want to easily navigate through the website and register my account
-        3. As a First Time user, I want to check all the website sections in a easy and User Friendly way.
+        3. As a First Time user, I want to check all the website sections in an easy and User-Friendly way.
 
 
     -   ### Returning Visitor Goals
         1. As a Returning user, I want to quickly return to my already registered account.
-        2. As a Returning user, I want to check the compendium and see my favourite scientists information.
+        2. As a Returning user, I want to check the compendium and see my favorite scientists information.
         3. As a Returning user, I want to check the featured scientists and the most newly added scientists.
+        4. As a Returning user, I want to check for my favorite scientists in a quick and easy way.
     
     - ### Frequent 
         1. As a Frequent user, I want to quickly return to my already registered account.
         2. As a Frequent user, I want to add more scientists to the database.
         3. As a Frequent user, I want to edit and add more detailed information to the already added scientists.
+        4. As a Frequent user, I want to search for particular scientists quickly to edit them and add more relevant information.
 
 -   ## Design
     -   ### Colour Scheme
-	- 
 
-        - The main colors used are
+        - The Colour Scheme was carefully chosen to provide a neutral and not so flashy website to the User. As several famous scientists lived in a century where color photography was not yet invented (prior to 1907) the pallete was chosen to show that scientific history is old and it comes a long way. I didn't want to make the website colors to stand out more than the scientist's pictures.
 
-        ![Color Palette](project/)
+        - [Coolors](https://coolors.co/000000-ffffff-727272-e9e9e9-546e7a) was used to choose the color pallete.
+
+        - The main colors used were: Black [#000000], White [#FFFFFF], Sonic Silver [#727272], Platinum [#E9E9E9] and Cadet [#546E7A].
+
+        ![Color Palette](static/images/project/coolors.jpg)
 
     -   ### Typography
 
