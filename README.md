@@ -236,7 +236,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 ## Additional Testing
 
-    All testing was done via the app deployed to Heroku (on compendium-of-scientists.herokuapp.com/home)
+    All testing performed via the app deployed to Heroku (on compendium-of-scientists.herokuapp.com/home)
 
 -   ### Testing base template (base.html):
 
@@ -334,7 +334,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
     - 6.1 **Fix:** I forgot to import the datetime on the beginning of the app.py file.
 
 7. After running the app.py python code on the PEP8 validator it returned the message "continuation line with same indent as next logical line"
-    7.1 **Fix** The indendation below the login function for the  "if check_password_hash" was wrong. I fixed the indendation, and it fixed the problem.
+   - 7.1 **Fix** The indendation below the login function for the  "if check_password_hash" was wrong. I fixed the indendation, and it fixed the problem.
 
 # Deployment
 
@@ -396,7 +396,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 ## Running locally
 
-1. Go tho this [project repository](https://github.com/MatSim91/Milestone-Project-1-One-Porcent) in GitHub while signed in in your own GitHub account.
+1. Go tho this [project repository](https://github.com/MatSim91/Milestone-Project-3-The-Compendium-of-scientists) in GitHub while signed in in your own GitHub account.
 2. Click on the dropdown menu Code option.
 3. Click on "Open with GitHub Desktop" to clone and open the repository locally.
 4. Click on the "Choose" option and navigate to the local path where you want the cloned repository to be.
@@ -415,8 +415,6 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 - [Materialize:](https://materializecss.com/) for the amount of free features that we can add.
 
 - [Google Icons:](https://google.github.io/material-design-icons/#icon-font-for-the-web) for the collection of free icons.
-
-- [Web Formatter](https://webformatter.com/) Used for formatting HTML, CSS and Javascript and also to check for errors.
 
 - [Google Fonts:](https://fonts.google.com/) Thanks to Google for providing this huge amount of free fonts on the site.
 
