@@ -4,7 +4,7 @@
 
 [Click here to view the live project :link:](https://compendium-of-scientists.herokuapp.com/)
 
-The Compendium of Scientists Description
+The Compendium of Scientists is a project created to gather information about all the scientists that contributed in any scientific area and that helped in the development of our society as we know it. The project idea was to developed an open website, similar Wikipedia, where any registered member can contribute to the Compendium of Scientists by adding and modifying any scientist in the database.
 
 # Table Of Contents
 
@@ -36,15 +36,20 @@ User Experience Description
 -   ## User stories
 
     -   ### First Time Visitor Goals
-        1. As a First Time user, I want to 
-        2. As a First Time user, I want to 
-        3. As a First Time user, I want to 
+        1. As a First Time user, I want to access the website and know what it is about.
+        2. As a First Time user, I want to easily navigate through the website and register my account
+        3. As a First Time user, I want to check all the website sections in a easy and User Friendly way.
 
 
-    -   ### Returning and Frequent Visitor Goals
-        1. As a Returning user, I want to 
-        2. As a Returning user, I want to 
-        3. As a Returning user, I want to 
+    -   ### Returning Visitor Goals
+        1. As a Returning user, I want to quickly return to my already registered account.
+        2. As a Returning user, I want to check the compendium and see my favourite scientists information.
+        3. As a Returning user, I want to check the featured scientists and the most newly added scientists.
+    
+    - ### Frequent 
+        1. As a Frequent user, I want to quickly return to my already registered account.
+        2. As a Frequent user, I want to add more scientists to the database.
+        3. As a Frequent user, I want to edit and add more detailed information to the already added scientists.
 
 -   ## Design
     -   ### Colour Scheme
