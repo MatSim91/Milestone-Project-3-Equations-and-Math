@@ -20,9 +20,11 @@
                 <p><em>Added by: {{ scientist.added_by }}</em></p>
             </div>
             <div class="card-action">
-                <a href="{{ url_for('edit_scientist', scientist_id=scientist._id) }}" class="waves-effect btn-small black">Edit</a>
-                <a href="{{ url_for('delete_scientist', scientist_id=scientist._id) }}" class="waves-effect btn-small red right">Delete</a>
+                <a href="{{ url_for('edit_scientist', scientist_id=scientist._id) }}"
+                    class="waves-effect btn-small black">Edit</a>
+                <a href="{{ url_for('delete_scientist', scientist_id=scientist._id) }}"
+                    class="waves-effect btn-small red right">Delete</a>
                 <a href="{{ scientist.url }}" class="waves-effect btn-small black" target=”_blank”>Wikipedia</a>
             </div>
 
-{% endblock %}
+            {% endblock %}

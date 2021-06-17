@@ -173,7 +173,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
     - [PEP8 online check](http://pep8online.com/) - Succesfully passed through the PEP8 validator.
 
     - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools) - Was used to check overall page performance
-        - ![Google Lighthouse Results](project/)
+        - ![Google Lighthouse Results](static/images/project/lighthouse.jpg)
 
 ## Testing User Stories
 

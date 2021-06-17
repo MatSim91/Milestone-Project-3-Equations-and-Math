@@ -1,10 +1,15 @@
 /*--- General Rules ---*/
 
-body {  
+body {
   background-color: #e9e9e9;
 }
 
-.h1, h2, h3, h4, h5, h6 {
+.h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Barlow;
   font-weight: 500;
 }
@@ -14,7 +19,7 @@ h3 {
 }
 
 .min-height {
-min-height: calc(100vh - 300px);
+  min-height: calc(100vh - 300px);
 }
 
 .active {
@@ -27,43 +32,43 @@ min-height: calc(100vh - 300px);
 }
 
 .btn-large:hover {
-background-color: #555555 !important;
+  background-color: #555555 !important;
 }
 
 .btn-small:hover {
-background-color: #555555 !important;
+  background-color: #555555 !important;
 }
 
 .btn:hover {
-background-color: #555555 !important;
+  background-color: #555555 !important;
 }
 
-::-moz-selection { 
-color: #ffffff;
-background: #555555;
+::-moz-selection {
+  color: #ffffff;
+  background: #555555;
 }
 
 ::selection {
-color: #ffffff;
-background: #555555;
+  color: #ffffff;
+  background: #555555;
 }
 
 .flash-message-row {
-margin-bottom: -75px;
+  margin-bottom: -75px;
 }
 
 .flash-message {
-margin-top: 50px;
-border: solid 1px #FF0000;
+  margin-top: 50px;
+  border: solid 1px #FF0000;
 }
 
 .search-bar {
-margin-top: 50px;
-margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .row-margin {
-margin-bottom: -20px;
+  margin-bottom: -20px;
 }
 
 /*--- Top Nav bar and Side Nav bar ---*/
@@ -126,7 +131,7 @@ margin-bottom: -20px;
 }
 
 .margin {
-margin-top: 25px;
+  margin-top: 25px;
 }
 
 /*--- Tool tip inspired on w3schools ---*/
@@ -164,6 +169,7 @@ margin-top: 25px;
   border-style: solid;
   border-color: transparent transparent rgba(0, 0, 0, 0.7) transparent;
 }
+
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
@@ -171,22 +177,15 @@ margin-top: 25px;
 /*--- Add Scientist page ---*/
 
 .datepicker-date-display {
-    background-color: #727272;
+  background-color: #727272;
 }
 
 .datepicker-table td.is-selected {
   background-color: #727272;
 }
 
-.dropdown-content li>a, .dropdown-content li>span {
+.dropdown-content li>a,
+.dropdown-content li>span {
   font-size: 16px;
   color: #000000;
 }
-
-/*--- Media Queries for Smaller Screens 
-
-@media (max-width: 775px) {
-nav .brand-logo {
-  font-size: 25px;
-}
-} ---*/
